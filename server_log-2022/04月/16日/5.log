@@ -1,0 +1,95 @@
+2022-04-16 14:55:46.753 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:47.500 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:47.501 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:47.519 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:00:29.546  INFO 10920 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 15:00:29.549  INFO 10920 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-04-16 15:00:31.919  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Starting SpringBootBusinessLayerTestTransactionRollbackApplication using Java 16.0.2 on mao with PID 4308 (H:\程序\大三下期\spring_boot业务层测试事务回滚\target\classes started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 15:00:31.920 DEBUG 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 15:00:31.920  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : The following 1 profile is active: "dev"
+2022-04-16 15:00:31.956  INFO 4308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 15:00:31.956  INFO 4308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 15:00:32.748  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-16 15:00:32.755  INFO 4308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-16 15:00:32.756  INFO 4308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-16 15:00:32.816  INFO 4308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-16 15:00:32.816  INFO 4308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2022-04-16 15:00:32.874  INFO 4308 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 15:00:32.971  INFO 4308 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-04-16 15:00:33.444  INFO 4308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-16 15:00:33.477  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-16 15:00:33.487  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Started SpringBootBusinessLayerTestTransactionRollbackApplication in 1.888 seconds (JVM running for 2.42)
+2022-04-16 15:00:35.869  INFO 4308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 15:00:35.869  INFO 4308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-16 15:00:35.870  INFO 4308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-16 15:00:36.298 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:00:36.315 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:00:36.379 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:01:55.452  WARN 4308 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/test, version : 1.2.8, lastPacketReceivedIdleMillis : 79114
+2022-04-16 15:01:55.476 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:01:55.477 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:01:55.496 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:01:56.918 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:01:56.918 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:01:56.942 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:01:57.744 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:01:57.744 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:01:57.762 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:01:58.515 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:01:58.515 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:01:58.533 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:01:59.325 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:01:59.326 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:01:59.345 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:03.862 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:03.863 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:03.882 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:05.089 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:05.089 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:05.112 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:06.265 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:06.266 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:06.283 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:07.964 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:07.965 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:07.986 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:09.163 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:09.163 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:09.184 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:11.502 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:11.502 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:11.522 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:14.219 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:14.219 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:14.241 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:15.422 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:15.422 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:15.440 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:16.622 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:16.623 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:16.640 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:17.865 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:17.866 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:17.884 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:19.098 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:19.098 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:19.116 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:21.559 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:21.559 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:21.578 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:23.342 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:23.343 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:23.361 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:24.571 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:24.571 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:24.589 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:25.549 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:25.549 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:25.567 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:31.534 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:31.534 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:31.552 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:32.844 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:02:32.844 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:02:32.869 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:02:35.459 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student

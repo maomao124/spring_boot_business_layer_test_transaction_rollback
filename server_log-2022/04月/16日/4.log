@@ -1,0 +1,98 @@
+2022-04-16 14:52:30.187  INFO 12264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 14:52:30.189  INFO 12264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-16 14:52:30.189  INFO 12264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-16 14:52:30.711 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:52:30.728 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:52:30.793 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:52:37.083 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:52:37.083 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:52:37.101 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:53:33.533 DEBUG 12264 --- [http-nio-8080-exec-2] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:53:33.533 DEBUG 12264 --- [http-nio-8080-exec-2] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:53:33.556 DEBUG 12264 --- [http-nio-8080-exec-2] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:54:00.212 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:54:00.212 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:54:00.230 DEBUG 12264 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:54:45.425  INFO 12264 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 14:54:45.428  INFO 12264 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-04-16 14:54:47.738  INFO 10252 --- [restartedMain] sLayerTestTransactionRollbackApplication : Starting SpringBootBusinessLayerTestTransactionRollbackApplication using Java 16.0.2 on mao with PID 10252 (H:\程序\大三下期\spring_boot业务层测试事务回滚\target\classes started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 14:54:47.738 DEBUG 10252 --- [restartedMain] sLayerTestTransactionRollbackApplication : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 14:54:47.739  INFO 10252 --- [restartedMain] sLayerTestTransactionRollbackApplication : The following 1 profile is active: "dev"
+2022-04-16 14:54:47.771  INFO 10252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 14:54:47.771  INFO 10252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 14:54:48.538  INFO 10252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-16 14:54:48.544  INFO 10252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-16 14:54:48.544  INFO 10252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-16 14:54:48.606  INFO 10252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-16 14:54:48.606  INFO 10252 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 834 ms
+2022-04-16 14:54:48.665  INFO 10252 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 14:54:48.760  INFO 10252 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-04-16 14:54:49.208  INFO 10252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-16 14:54:49.241  INFO 10252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-16 14:54:49.251  INFO 10252 --- [restartedMain] sLayerTestTransactionRollbackApplication : Started SpringBootBusinessLayerTestTransactionRollbackApplication in 1.833 seconds (JVM running for 2.365)
+2022-04-16 14:54:51.225  INFO 10252 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 14:54:51.225  INFO 10252 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-16 14:54:51.226  INFO 10252 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-16 14:54:51.661 DEBUG 10252 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:54:51.677 DEBUG 10252 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:54:51.738 DEBUG 10252 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:14.707  INFO 10252 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 14:55:14.710  INFO 10252 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-04-16 14:55:17.125  INFO 9840 --- [restartedMain] sLayerTestTransactionRollbackApplication : Starting SpringBootBusinessLayerTestTransactionRollbackApplication using Java 16.0.2 on mao with PID 9840 (H:\程序\大三下期\spring_boot业务层测试事务回滚\target\classes started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 14:55:17.126 DEBUG 9840 --- [restartedMain] sLayerTestTransactionRollbackApplication : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 14:55:17.126  INFO 9840 --- [restartedMain] sLayerTestTransactionRollbackApplication : The following 1 profile is active: "dev"
+2022-04-16 14:55:17.159  INFO 9840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 14:55:17.159  INFO 9840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 14:55:17.961  INFO 9840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-16 14:55:17.968  INFO 9840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-16 14:55:17.969  INFO 9840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-16 14:55:18.031  INFO 9840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-16 14:55:18.031  INFO 9840 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 872 ms
+2022-04-16 14:55:18.095  INFO 9840 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 14:55:18.191  INFO 9840 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-04-16 14:55:18.639  INFO 9840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-16 14:55:18.673  INFO 9840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-16 14:55:18.683  INFO 9840 --- [restartedMain] sLayerTestTransactionRollbackApplication : Started SpringBootBusinessLayerTestTransactionRollbackApplication in 1.905 seconds (JVM running for 2.466)
+2022-04-16 14:55:20.484  INFO 9840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 14:55:20.484  INFO 9840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-16 14:55:20.485  INFO 9840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-16 14:55:20.939 DEBUG 9840 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:20.955 DEBUG 9840 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:21.018 DEBUG 9840 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:36.488  INFO 9840 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 14:55:36.492  INFO 9840 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-04-16 14:55:38.862  INFO 10920 --- [restartedMain] sLayerTestTransactionRollbackApplication : Starting SpringBootBusinessLayerTestTransactionRollbackApplication using Java 16.0.2 on mao with PID 10920 (H:\程序\大三下期\spring_boot业务层测试事务回滚\target\classes started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 14:55:38.863 DEBUG 10920 --- [restartedMain] sLayerTestTransactionRollbackApplication : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 14:55:38.863  INFO 10920 --- [restartedMain] sLayerTestTransactionRollbackApplication : The following 1 profile is active: "dev"
+2022-04-16 14:55:38.898  INFO 10920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 14:55:38.898  INFO 10920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 14:55:39.705  INFO 10920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-16 14:55:39.712  INFO 10920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-16 14:55:39.712  INFO 10920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-16 14:55:39.773  INFO 10920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-16 14:55:39.774  INFO 10920 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 875 ms
+2022-04-16 14:55:39.838  INFO 10920 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 14:55:39.936  INFO 10920 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-04-16 14:55:40.403  INFO 10920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-16 14:55:40.437  INFO 10920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-16 14:55:40.447  INFO 10920 --- [restartedMain] sLayerTestTransactionRollbackApplication : Started SpringBootBusinessLayerTestTransactionRollbackApplication in 1.92 seconds (JVM running for 2.485)
+2022-04-16 14:55:40.996  INFO 10920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 14:55:40.996  INFO 10920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-16 14:55:40.997  INFO 10920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-16 14:55:41.437 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:41.452 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:41.517 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:43.080 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:43.081 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:43.100 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:44.131 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:44.132 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:44.149 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:44.834 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:44.835 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:44.858 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:45.806 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:45.806 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 14:55:45.824 DEBUG 10920 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 14:55:46.735 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 14:55:46.736 DEBUG 10920 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 

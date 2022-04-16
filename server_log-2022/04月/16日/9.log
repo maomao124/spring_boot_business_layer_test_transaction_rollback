@@ -1,0 +1,83 @@
+2022-04-16 15:25:02.721  WARN 4308 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/test, version : 1.2.8, lastPacketReceivedIdleMillis : 347577
+2022-04-16 15:25:02.739 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:25:02.739 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:25:02.756 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:25:03.670 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:25:03.670 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:25:03.687 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:25:05.046 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:25:05.046 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:25:05.063 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:25:19.419  INFO 14844 --- [main] m.s.service.IStudentServiceTest          : Starting IStudentServiceTest using Java 16.0.2 on mao with PID 14844 (started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 15:25:19.420 DEBUG 14844 --- [main] m.s.service.IStudentServiceTest          : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 15:25:19.420  INFO 14844 --- [main] m.s.service.IStudentServiceTest          : The following 1 profile is active: "dev"
+2022-04-16 15:25:20.416  INFO 14844 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 15:25:20.673  INFO 14844 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-04-16 15:25:22.207  INFO 14844 --- [main] m.s.service.IStudentServiceTest          : Started IStudentServiceTest in 3.201 seconds (JVM running for 4.16)
+2022-04-16 15:25:22.753  INFO 14844 --- [main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@3f57bcad testClass = IStudentServiceTest, testInstance = mao.spring_boot_business_layer_test_transaction_rollback.service.IStudentServiceTest@9a9aa68, testMethod = delete@IStudentServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1e8b7643 testClass = IStudentServiceTest, locations = '{}', classes = '{class mao.spring_boot_business_layer_test_transaction_rollback.SpringBootBusinessLayerTestTransactionRollbackApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c333c60, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@67080771, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@27ff5d15, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@702b8b12, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7ea9e1e2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5d624da6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.jdbc.support.JdbcTransactionManager@3a3883c4]; rollback [true]
+2022-04-16 15:25:23.167 DEBUG 14844 --- [main] m.s.mapper.StudentMapper.deleteById      : ==>  Preparing: DELETE FROM student WHERE student_no=?
+2022-04-16 15:25:23.204 DEBUG 14844 --- [main] m.s.mapper.StudentMapper.deleteById      : ==> Parameters: 202012341078(Long)
+2022-04-16 15:25:23.207 DEBUG 14844 --- [main] m.s.mapper.StudentMapper.deleteById      : <==    Updates: 1
+2022-04-16 15:25:23.219  INFO 14844 --- [main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@3f57bcad testClass = IStudentServiceTest, testInstance = mao.spring_boot_business_layer_test_transaction_rollback.service.IStudentServiceTest@9a9aa68, testMethod = delete@IStudentServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1e8b7643 testClass = IStudentServiceTest, locations = '{}', classes = '{class mao.spring_boot_business_layer_test_transaction_rollback.SpringBootBusinessLayerTestTransactionRollbackApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c333c60, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@67080771, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@27ff5d15, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@702b8b12, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7ea9e1e2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5d624da6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-04-16 15:25:23.262  INFO 14844 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 15:25:23.268  INFO 14844 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-04-16 15:25:49.543 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:25:49.543 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:25:49.561 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:25:50.740 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:25:50.741 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:25:50.758 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:25:53.644 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:25:53.644 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:25:53.661 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:26:03.898  INFO 4308 --- [http-nio-8080-exec-7] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x040x010x00P6[;0xc700x00...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-04-16 15:26:03.906  INFO 4308 --- [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x050x010x00...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-04-16 15:27:03.702  WARN 4308 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/test, version : 1.2.8, lastPacketReceivedIdleMillis : 70053
+2022-04-16 15:27:03.721 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:27:03.721 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:27:03.746 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:27:05.610 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:27:05.610 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:27:05.627 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:27:06.021 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:27:06.022 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:27:06.039 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:27:06.179 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:27:06.180 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:27:06.198 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:27:06.346 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:27:06.346 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:27:06.363 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:27:06.520 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:27:06.520 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:27:06.542 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:27:07.599 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.controller.StudentController         : 202012341038
+2022-04-16 15:27:08.540 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012341039

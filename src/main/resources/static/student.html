@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：spring_boot_business_layer_test_transaction_rollback
+  File name(文件名): student
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/16
+  Time(创建时间)： 14:28
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生列表</title>
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/vue.js"></script>
+    <script src="js/jQuery.js"></script>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        button.load {
+            position: fixed;
+            width: 50px;
+            height: 25px;
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <button class="load" @click="load"><strong>刷新</strong></button>
+    <table>
+        <tr>
+            <th>
+                学生学号
+            </th>
+            <th>
+                学生姓名
+            </th>
+            <th>
+                学生性别
+            </th>
+            <th>
+                电话号码
+            </th>
+            <th>
+                家庭电话号码
+            </th>
+            <th>
+                生日信息
+            </th>
+            <th>
+                家庭地址
+            </th>
+            <th>
+                身份证号码
+            </th>
+            <th>
+                电子邮箱
+            </th>
+            <th>
+                寝室号
+            </th>
+            <th>
+                所属班级编号
+            </th>
+            <th>
+                状态
+            </th>
+            <th>
+                备注
+            </th>
+            <th>
+                删除操作
+            </th>
+        </tr>
+        <tr v-for="(student,index) in studentList">
+            <td>
+                {{student.studentNo}}
+            </td>
+            <td>
+                {{student.name}}
+            </td>
+            <td>
+                {{student.sex}}
+            </td>
+            <td>
+                {{student.telephoneNumber}}
+            </td>
+            <td>
+                {{student.familyTelephoneNumber}}
+            </td>
+            <td>
+                {{student.birthday}}
+            </td>
+            <td>
+                {{student.address}}
+            </td>
+            <td>
+                {{student.idCard}}
+            </td>
+            <td>
+                {{student.email}}
+            </td>
+            <td>
+                {{student.dormitoryNumber}}
+            </td>
+            <td>
+                {{student.classNo}}
+            </td>
+            <td>
+                {{student.state}}
+            </td>
+            <td>
+                {{student.remarks}}
+            </td>
+            <td>
+                <a @click="deleteStudent(student.studentNo)" href="javascript:;">删除</a>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            studentList: [],
+        },
+
+        methods: {
+            load: function ()
+            {
+                var that = this;
+                //发起ajax请求
+                $.ajax(
+                    {
+                        //请求的url：
+                        url: "/studentList",
+                        //参数：
+                        data:
+                            {},
+                        //请求类型：
+                        type: "get",
+                        //响应的数据类型：
+                        dataType: "json",
+                        //请求成功的回调函数：
+                        success: function (data)
+                        {
+                            //console.log(data);
+                            that.studentList = data;
+                            //console.log(that.studentList)
+
+                        },
+                        //请求失败的回调函数：
+                        error: function ()
+                        {
+                            alert("网络错误！请稍后再试！");
+                        },
+                        //设置超时时间：
+                        timeout: 2000,
+                        //头信息：
+                        headers:
+                            {},
+                    }
+                )
+            }
+            ,
+
+            deleteStudent: function (studentNo)
+            {
+                console.log(studentNo);
+                //todo:编写服务器代码
+
+                //发起ajax请求
+                $.ajax(
+                    {
+                        //请求的url：
+                        url: "/deleteStudent",
+                        //参数：
+                        data:
+                            {
+                                studentNo: studentNo,
+                            },
+                        //请求类型：
+                        type: "get",
+                        //响应的数据类型：
+                        //dataType: "json",
+                        //请求成功的回调函数：
+                        success: function (data)
+                        {
+                            console.log(data);
+
+                        },
+                        //请求失败的回调函数：
+                        error: function ()
+                        {
+                            alert("网络错误！请稍后再试！");
+                        },
+                        //设置超时时间：
+                        timeout: 2000,
+                        //头信息：
+                        headers:
+                            {},
+                    }
+                )
+            }
+        }
+    })
+
+    app.load();
+
+</script>
+
+</body>
+</html>

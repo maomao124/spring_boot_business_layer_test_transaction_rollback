@@ -1,0 +1,117 @@
+2022-04-16 15:11:00.093 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:11:00.112 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:11:01.323 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:11:01.323 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:11:01.340 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:11:05.375 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:11:05.375 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:11:05.392 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:12:56.209  WARN 4308 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/test, version : 1.2.8, lastPacketReceivedIdleMillis : 110829
+2022-04-16 15:12:56.227 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:12:56.228 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:12:56.245 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:17:58.832  INFO 4308 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 15:17:58.834  INFO 4308 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-04-16 15:17:58.908  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Starting SpringBootBusinessLayerTestTransactionRollbackApplication using Java 16.0.2 on mao with PID 4308 (H:\程序\大三下期\spring_boot业务层测试事务回滚\target\classes started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 15:17:58.908 DEBUG 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 15:17:58.908  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : The following 1 profile is active: "dev"
+2022-04-16 15:17:59.077  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-16 15:17:59.078  INFO 4308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-16 15:17:59.078  INFO 4308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-16 15:17:59.096  INFO 4308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-16 15:17:59.096  INFO 4308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-04-16 15:17:59.109  INFO 4308 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 15:17:59.140  INFO 4308 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-04-16 15:17:59.279  INFO 4308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-16 15:17:59.294  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-16 15:17:59.297  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Started SpringBootBusinessLayerTestTransactionRollbackApplication in 0.42 seconds (JVM running for 1048.23)
+2022-04-16 15:17:59.299  INFO 4308 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-16 15:18:00.739  INFO 4308 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-04-16 15:18:00.739  INFO 4308 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-04-16 15:18:00.812  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Starting SpringBootBusinessLayerTestTransactionRollbackApplication using Java 16.0.2 on mao with PID 4308 (H:\程序\大三下期\spring_boot业务层测试事务回滚\target\classes started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 15:18:00.812 DEBUG 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 15:18:00.812  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : The following 1 profile is active: "dev"
+2022-04-16 15:18:00.979  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-16 15:18:00.980  INFO 4308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-16 15:18:00.980  INFO 4308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-16 15:18:00.996  INFO 4308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-16 15:18:00.997  INFO 4308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2022-04-16 15:18:01.009  INFO 4308 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 15:18:01.039  INFO 4308 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-04-16 15:18:01.163  INFO 4308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-16 15:18:01.179  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-16 15:18:01.182  INFO 4308 --- [restartedMain] sLayerTestTransactionRollbackApplication : Started SpringBootBusinessLayerTestTransactionRollbackApplication in 0.396 seconds (JVM running for 1050.115)
+2022-04-16 15:18:01.183  INFO 4308 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-16 15:18:08.910  INFO 4308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 15:18:08.910  INFO 4308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-16 15:18:08.910  INFO 4308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-16 15:18:09.083 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:18:09.083 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:18:09.106 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:18:14.382 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012340104
+2022-04-16 15:18:17.344 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.controller.StudentController         : 202012340105
+2022-04-16 15:18:20.965 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.controller.StudentController         : 202012340108
+2022-04-16 15:18:37.963 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.controller.StudentController         : 202012340102
+2022-04-16 15:18:45.894 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.controller.StudentController         : 202012340107
+2022-04-16 15:19:15.116  WARN 4308 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/test, version : 1.2.8, lastPacketReceivedIdleMillis : 66027
+2022-04-16 15:19:15.138 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
+2022-04-16 15:19:15.139 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
+2022-04-16 15:19:15.160 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:19:17.307 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.controller.StudentController         : 202012340105
+2022-04-16 15:19:19.317 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.controller.StudentController         : 202012340107
+2022-04-16 15:19:20.310 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.controller.StudentController         : 202012340108
+2022-04-16 15:19:21.095 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.controller.StudentController         : 202012340109
+2022-04-16 15:19:22.339 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.controller.StudentController         : 202012340110
+2022-04-16 15:20:51.767 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012340139
+2022-04-16 15:20:53.576 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.controller.StudentController         : 202012340141
+2022-04-16 15:20:53.993 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.controller.StudentController         : 202012340142
+2022-04-16 15:20:54.625 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.controller.StudentController         : 202012340143
+2022-04-16 15:20:55.011 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.controller.StudentController         : 202012340144
+2022-04-16 15:20:55.617 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.controller.StudentController         : 202012340145
+2022-04-16 15:20:56.756 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.controller.StudentController         : 202012340154
+2022-04-16 15:20:57.157 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.controller.StudentController         : 202012340155
+2022-04-16 15:20:57.935 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.controller.StudentController         : 202012340156
+2022-04-16 15:20:58.348 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.controller.StudentController         : 202012340157
+2022-04-16 15:20:58.865 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012340158
+2022-04-16 15:21:00.059 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.controller.StudentController         : 202012340201
+2022-04-16 15:21:00.553 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.controller.StudentController         : 202012340160
+2022-04-16 15:21:01.229 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.controller.StudentController         : 202012340202
+2022-04-16 15:21:01.615 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.controller.StudentController         : 202012340203
+2022-04-16 15:21:02.269 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.controller.StudentController         : 202012340204
+2022-04-16 15:21:09.287 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.controller.StudentController         : 202012340213
+2022-04-16 15:21:09.895 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.controller.StudentController         : 202012340214
+2022-04-16 15:21:10.147 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.controller.StudentController         : 202012340214
+2022-04-16 15:21:10.894 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.controller.StudentController         : 202012340215
+2022-04-16 15:21:11.057 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012340215
+2022-04-16 15:21:11.927 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.controller.StudentController         : 202012340217
+2022-04-16 15:21:12.099 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.controller.StudentController         : 202012340217
+2022-04-16 15:21:12.696 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.controller.StudentController         : 202012340218
+2022-04-16 15:21:12.869 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.controller.StudentController         : 202012340218
+2022-04-16 15:21:13.233 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.controller.StudentController         : 202012340219
+2022-04-16 15:21:13.401 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.controller.StudentController         : 202012340219
+2022-04-16 15:21:13.771 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.controller.StudentController         : 202012340220
+2022-04-16 15:21:15.378 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.controller.StudentController         : 202012340232
+2022-04-16 15:21:15.529 DEBUG 4308 --- [http-nio-8080-exec-5] m.s.controller.StudentController         : 202012340232
+2022-04-16 15:21:16.547 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012340240
+2022-04-16 15:21:17.807 DEBUG 4308 --- [http-nio-8080-exec-7] m.s.controller.StudentController         : 202012340259
+2022-04-16 15:21:22.521 DEBUG 4308 --- [http-nio-8080-exec-8] m.s.controller.StudentController         : 202012340341
+2022-04-16 15:21:22.826 DEBUG 4308 --- [http-nio-8080-exec-9] m.s.controller.StudentController         : 202012340343
+2022-04-16 15:21:23.132 DEBUG 4308 --- [http-nio-8080-exec-10] m.s.controller.StudentController         : 202012340345
+2022-04-16 15:21:23.971 DEBUG 4308 --- [http-nio-8080-exec-2] m.s.controller.StudentController         : 202012340352
+2022-04-16 15:21:24.289 DEBUG 4308 --- [http-nio-8080-exec-1] m.s.controller.StudentController         : 202012340353
+2022-04-16 15:21:25.441 DEBUG 4308 --- [http-nio-8080-exec-3] m.s.controller.StudentController         : 202012340414
+2022-04-16 15:21:26.332 DEBUG 4308 --- [http-nio-8080-exec-4] m.s.controller.StudentController         : 202012340422
+2022-04-16 15:24:20.766 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.controller.StudentController         : 202012341078
+2022-04-16 15:24:41.159  INFO 18744 --- [main] m.s.service.IStudentServiceTest          : Starting IStudentServiceTest using Java 16.0.2 on mao with PID 18744 (started by mao in H:\程序\大三下期\spring_boot业务层测试事务回滚)
+2022-04-16 15:24:41.160 DEBUG 18744 --- [main] m.s.service.IStudentServiceTest          : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-16 15:24:41.161  INFO 18744 --- [main] m.s.service.IStudentServiceTest          : The following 1 profile is active: "dev"
+2022-04-16 15:24:42.133  INFO 18744 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-04-16 15:24:42.393  INFO 18744 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-04-16 15:24:43.933  INFO 18744 --- [main] m.s.service.IStudentServiceTest          : Started IStudentServiceTest in 3.164 seconds (JVM running for 4.135)
+2022-04-16 15:24:44.489  INFO 18744 --- [main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@3f57bcad testClass = IStudentServiceTest, testInstance = mao.spring_boot_business_layer_test_transaction_rollback.service.IStudentServiceTest@359ceb13, testMethod = delete@IStudentServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1e8b7643 testClass = IStudentServiceTest, locations = '{}', classes = '{class mao.spring_boot_business_layer_test_transaction_rollback.SpringBootBusinessLayerTestTransactionRollbackApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c333c60, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@67080771, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@27ff5d15, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@702b8b12, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7ea9e1e2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5d624da6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.jdbc.support.JdbcTransactionManager@1068176]; rollback [true]
+2022-04-16 15:24:44.968 DEBUG 18744 --- [main] m.s.mapper.StudentMapper.deleteById      : ==>  Preparing: DELETE FROM student WHERE student_no=?
+2022-04-16 15:24:45.041 DEBUG 18744 --- [main] m.s.mapper.StudentMapper.deleteById      : ==> Parameters: 202012341078(Long)
+2022-04-16 15:24:45.049 DEBUG 18744 --- [main] m.s.mapper.StudentMapper.deleteById      : <==    Updates: 1
+2022-04-16 15:24:45.062  INFO 18744 --- [main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@3f57bcad testClass = IStudentServiceTest, testInstance = mao.spring_boot_business_layer_test_transaction_rollback.service.IStudentServiceTest@359ceb13, testMethod = delete@IStudentServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1e8b7643 testClass = IStudentServiceTest, locations = '{}', classes = '{class mao.spring_boot_business_layer_test_transaction_rollback.SpringBootBusinessLayerTestTransactionRollbackApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c333c60, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@67080771, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@27ff5d15, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@702b8b12, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7ea9e1e2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5d624da6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-04-16 15:24:45.079  INFO 18744 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-04-16 15:24:45.087  INFO 18744 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
