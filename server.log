@@ -35,3 +35,5 @@
 2022-04-16 15:27:31.351 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.mapper.StudentMapper.selectList      : ==>  Preparing: SELECT student_no,name,sex,telephone_number,family_telephone_number,birthday,address,id_card,email,dormitory_number,class_no,state,remarks FROM student
 2022-04-16 15:27:31.352 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.mapper.StudentMapper.selectList      : ==> Parameters: 
 2022-04-16 15:27:31.372 DEBUG 4308 --- [http-nio-8080-exec-6] m.s.mapper.StudentMapper.selectList      : <==      Total: 607
+2022-04-16 15:29:59.809  INFO 4308 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2022-04-16 15:29:59.810  INFO 4308 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
